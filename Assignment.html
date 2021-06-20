@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="sss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left_area">
+        <h3> <span>Assignment</span></h3>
+      </div>
+      <div class="right_area">
+        <a href="prototype.html" class="logout_btn">Logout</a>
+      </div>
+    </header>
+    <!--header area end-->
+    <!--mobile navigation bar start-->
+    <div class="mobile_nav">
+      <div class="nav_bar">
+        <img src="1.jpg" class="mobile_profile_image" alt="">
+        <i class="fa fa-bars nav_btn"></i>
+      </div>
+      <div class="mobile_nav_items">
+        <a href="#"><i class="fas fa-book"></i><span>Courses</span></a>
+        <a href="#"><i class="fas fa-bell"></i><span>Updates</span></a>
+        <a href="#"><i class="far fa-comments"></i><span>Chat</span></a>
+        <a href="#"><i class="fas fa-th"></i><span>Assignments</span></a>
+        <a href="#"><i class="far fa-file-alt"></i><span>Files</span></a>
+        <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+      </div>
+    </div>
+    <!--mobile navigation bar end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+      <div class="profile_info">
+        <img src="11.JPG" class="profile_image" alt="">
+        <h4>Sad Group</h4>
+      </div>
+      <a href="Updates.html"><i class="fas fa-bell"></i><span>Updates</span></a>
+      <a href="Courses.html"><i class="fas fa-book"></i><span>Courses</span></a>
+      <a href="Chat1.html"><i class="far fa-comments"></i><span>Chat</span></a>
+      <a href="Assignment.html"><i class="fas fa-th"></i><span>Assignments</span></a>
+      <a href="Files.html"><i class="far fa-file-alt"></i><span>Files</span></a>
+    </div>
+    <!--sidebar end-->
+
+    <div class="content">
+        <h1>Assigned</h1>
+        
+        <div class="card">
+          <a href="Assignment1.html">
+          <p>SYSTEM ANALYSIS AND DESIGN</p>
+          <h4>PROTOTYPE</h4>
+          <h5>Due Tommorow at 10:00am</h5>
+          </a>
+        </div>
+        <div class="card">
+          <p>MULTIMEDIA</p>
+          <h4>3D WAREHOUSE</h4>
+          <h5>Due June 3, 2021 09:00am</h5>
+        </div>
+        <div class="card">
+          <p>FIL DIS</p>
+          <h4>TANAGA</h4>
+          <h5>Due June 5, 2021  03:00pm</h5>
+        </div>
+        <br>
+        <h1>Completed</h1>
+        <div  style="background: #19B3D3;" class="card">
+            <p>SYSTEM ANALYSIS AND DESIGN</p>
+            <h5>Chapter 1 (Manuscript with Title Page)</h5>
+          </div>
+          <div style="background: #19B3D3;" class="card">
+            <p>MULTIMEDIA</p>
+            <h5>PHOTOSHOP</h5>
+            </div>
+          </div>
+          
+      </div>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
+    </script>
+
+  </body>
+</html>

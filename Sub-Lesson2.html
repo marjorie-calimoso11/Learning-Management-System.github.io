@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="sub-lesson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left_area">
+        
+        <h3> <span>Courses</span></h3>
+        <p>System Analysis And Design IT2B</p>
+      </div>
+      <div class="right_area">
+        <a href="prototype.html" class="logout_btn">Logout</a>
+      </div>
+    </header>
+    <!--header area end-->
+    <!--mobile navigation bar start-->
+    <div class="mobile_nav">
+      <div class="nav_bar">
+        <img src="1.jpg" class="mobile_profile_image" alt="">
+        <i class="fa fa-bars nav_btn"></i>
+      </div>
+      <div class="mobile_nav_items">
+        <a href="#"><i class="fas fa-book"></i><span>Courses</span></a>
+        <a href="#"><i class="fas fa-bell"></i><span>Updates</span></a>
+        <a href="#"><i class="far fa-comments"></i><span>Chat</span></a>
+        <a href="#"><i class="fas fa-th"></i><span>Assignments</span></a>
+        <a href="#"><i class="far fa-file-alt"></i><span>Files</span></a>
+        <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+      </div>
+    </div>
+    <!--mobile navigation bar end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+      <div class="profile_info">
+        <img src="Teacher.jpg" class="profile_image" alt="">
+        <h4>TEACHER</h4>
+      </div>
+      <a href="T-Updates.html"><i class="fas fa-bell"></i><span>Updates</span></a>
+      <a href="T-Home.html"><i class="fas fa-book"></i><span>Courses</span></a>
+      <a href="T-Chat.html"><i class="far fa-comments"></i><span>Chat</span></a>
+      <a href="T-Files.html"><i class="far fa-file-alt"></i><span>Files</span></a>
+    </div>
+    <!--sidebar end-->
+
+    <div class="content">
+
+      <div class="box">
+        <ul>
+            <li><a style="color: black;" href="Sub-Lesson.html">LESSONS</a></li>
+            <li><a href="Sub-Files.html">FILES</a></li>
+            <li><a href="Sub-Activities.html">ACTIVITIES</a></li>
+            <li><a href="Sub-Updates.html">NOTIFICATION</a></li>
+            <li><a href="Sub-Students.html">STUDENTS</a> </li>
+        </ul>
+     </div>
+
+       <div class="card">
+        <a href="Sub-Lesson-Chapter1.html">
+        <p>CHAPTER 1</p>
+        <h4>Introduce general idea about what is system. Differentiate types of information system in organization.</h4>
+        <h5>UNLOCKED</h5>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="Sub-Lesson-Chapter2.html">
+        <p>CHAPTER 2</p>
+        <h4>Systems Development Life Cycle.</h4>
+        <h5>LOCKED</h5>
+        </a>
+      </div>
+
+      <div class="card2">
+        <a href="Sub-Lesson-Add.html">
+        <p>ADD LESSON</p>
+        </a>
+      </div>
+
+     
+    </div>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="add-sub.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left_area">
+        <h3> <span>Courses</span></h3>
+      </div>
+      <div class="right_area">
+        <a href="prototype.html" class="logout_btn">Logout</a>
+      </div>
+    </header>
+    <!--header area end-->
+    <!--mobile navigation bar start-->
+    <div class="mobile_nav">
+      <div class="nav_bar">
+        <img src="Teacher.jpg" class="mobile_profile_image" alt="">
+        <i class="fa fa-bars nav_btn"></i>
+      </div>
+      <div class="mobile_nav_items">
+        <a href="#"><i class="fas fa-book"></i><span>Courses</span></a>
+        <a href="#"><i class="fas fa-bell"></i><span>Updates</span></a>
+        <a href="#"><i class="far fa-comments"></i><span>Chat</span></a>
+        <a href="#"><i class="fas fa-th"></i><span>Assignments</span></a>
+        <a href="#"><i class="far fa-file-alt"></i><span>Files</span></a>
+        <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+      </div>
+    </div>
+    <!--mobile navigation bar end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+      <div class="profile_info">
+        <img src="Teacher.jpg" class="profile_image" alt="">
+        <h4>TEACHER</h4>
+      </div>
+      <a href="Updates.html"><i class="fas fa-bell"></i><span>Teachers</span></a>
+      <a href="Courses.html"><i class="fas fa-book"></i><span>Students</span></a>
+    </div>
+    <!--sidebar end-->
+
+    <div class="content">
+
+        <div class="coun">
+        <p>Courses</p>
+        
+        <select id="Subs" name="Subs">
+          <option value="SAD">SYSTEM ANALYSIS AND DESIGN</option>
+          <option value="MULTI">MULTIMEDIA</option>
+          <option value="PROG">PROGRAMMING</option>
+          <option value="HCI">HCI</option>
+          <option value="DSA">DSA 105</option>
+        </select>
+        </div>
+
+        <div class="coun1">
+            <p>Section</p>
+            
+            <select id="Subs" name="Subs">
+              <option value="SAD">IT2A</option>
+              <option value="MULTI">IT2B</option>
+              <option value="PROG">IT2C</option>
+              <option value="HCI">IT2D</option>
+            </select>
+    </div>
+    
+    <div class="coun2">
+        <p>Students</p>
+        <div class="check">
+    <form action="Sub-Lesson.html" method="get">
+        <input type="checkbox" name="vehicle1" value="Bike">
+        <label for="vehicle3"> Marjorie Calimoso</label><br><br>
+        <input type="checkbox" name="vehicle1" value="Bike">
+        <label for="vehicle3"> Mico Paliwen</label><br><br>
+        <input type="checkbox" name="vehicle1" value="Bike">
+        <label for="vehicle3"> Clint Shane Angelo D. Olivar</label><br><br>
+        <input type="checkbox" name="vehicle1" value="Bike">
+        <label for="vehicle3"> John Ceazer Estanoco</label><br><br>
+        <input type="checkbox" name="vehicle1" value="Bike">
+        <label for="vehicle3"> John Maverick Quero</label><br><br>
+        <input type="checkbox" name="vehicle1" value="Bike">
+        <label for="vehicle3"> Joshua Quitoriano</label><br><br>
+        <input type="checkbox" name="vehicle1" value="Bike">
+        <label for="vehicle3"> Francis Absalon</label><br><br>
+        <input type="checkbox" name="vehicle1" value="Bike">
+        <label for="vehicle3"> Jomar Mendejar</label><br><br>
+        <input type="checkbox" name="vehicle1" value="Bike">
+        <label for="vehicle3"> Frankie Delos Trino</label><br><br>
+        <input type="checkbox" name="vehicle1" value="Bike">
+        <label for="vehicle3"> Geraldine Soberano</label><br><br>
+        <input type="checkbox" name="vehicle1" value="Bike">
+        <label for="vehicle3"> Jether Mendoza</label><br><br>
+        <input type="checkbox" name="vehicle1" value="Bike">
+        <label for="vehicle3"> Darwin Dingle</label><br><br>
+        <input type="checkbox" name="vehicle1" value="Bike">
+        <label for="vehicle3"> Xye Rapada</label><br><br>
+        <input type="checkbox" name="vehicle1" value="Bike">
+        <label for="vehicle3"> Rhaan Tacaca</label><br><br>
+
+        <input style="margin-left: 150px;" type="submit" value="Submit">
+       
+        </div>
+      </form>
+    </div>
+      </div>
+       
+      </div>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
+    </script>
+
+  </body>
+</html>
